@@ -18,6 +18,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    buildFeatures {
+        dataBinding true
+    }
 
     buildTypes {
         release {
@@ -47,4 +50,16 @@ dependencies {
     //dagger hilt
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-compiler:2.44"
+
+    //room
+    implementation "androidx.room:room-runtime:2.6.0"
+    annotationProcessor "androidx.room:room-compiler:2.6.0"
+
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+    implementation 'com.afollestad.material-dialogs:input:3.3.0'
+
+    implementation "androidx.fragment:fragment-ktx:1.4.0"
+
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.2"
+
 }
